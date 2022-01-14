@@ -230,4 +230,12 @@ input[type=submit]:hover {
   display: inline-block;
   margin-right: 10px;
 }
+
+.youtube {
+  background-color: #FF0000;
+}
+
+.link {
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
