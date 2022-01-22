@@ -191,6 +191,45 @@ p {
   display: inline-block;
 }
 
+#sbv2 {
+  border-style: groove;
+  border-radius: 25px;
+  background: #624b68;
+  padding: 10px;
+  border-color: #84648b;
+  width: 200px;
+  height: 150px;
+  margin: auto;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#sbv3 {
+  border-style: groove;
+  border-radius: 25px;
+  background: #624b68;
+  padding: 10px;
+  border-color: #84648b;
+  width: 200px;
+  height: 150px;
+  margin: auto;
+  font-size: 20px;
+  display: inline-block;
+}
+
+#evv1 {
+  border-style: groove;
+  border-radius: 25px;
+  background: #624b68;
+  padding: 10px;
+  border-color: #84648b;
+  width: 200px;
+  height: 150px;
+  margin: auto;
+  font-size: 20px;
+  display: inline-block;
+}
+
 input[type=text], select, textarea {
   width: 50%;
   padding: 12px;
@@ -229,10 +268,6 @@ input[type=submit]:hover {
 #subject {
   display: inline-block;
   margin-right: 10px;
-}
-
-.youtube {
-  background-color: #FF0000;
 }
 
 .link {
