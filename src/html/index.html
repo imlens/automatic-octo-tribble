@@ -17,9 +17,13 @@
     <link rel="shortcut icon" href="../images/favicon.ico">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-config" content="../images/browserconfig.xml">
-    <meta name="theme-color" content="#000000"> 
+    <meta name="theme-color" content="#000000">
 </head>
 <body>
+    <!-- Preloader -->
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
     <div id="fullpage">
         <div class="section s1">Hey, I'm Zack</div>
         <div class="section s2">I'm a self-taught developer</div>
@@ -43,12 +47,23 @@
             </div>
         </div>  
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() {
+            $('#status').fadeOut();
+            $('#preloader').delay(350).fadeOut('slow');
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+    //]]>
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         new fullpage('#fullPage', {
             autoScrolling: true,
             licenseKey: 'd1OA3mX&q0',
-            navigation: true
+            navigation: true,
+            afterRender: true
         })
     </script>
 </body>
